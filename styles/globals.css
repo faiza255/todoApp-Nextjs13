@@ -1,0 +1,7 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+#chech-box-1:checked ~ .check-1{
+  @apply text-opacity-100;
+}
