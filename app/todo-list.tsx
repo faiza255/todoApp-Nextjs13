@@ -57,6 +57,7 @@ export default function TodoList() {
         // value={val}
         className="rounded w-96 p-1 outline-none m-5 dark:text-black"
         value={todo}
+
         onChange={(e) => {
           setTodo(e.target.value);
         }}
@@ -68,6 +69,7 @@ export default function TodoList() {
         //   // setName("");
         // }}
         // disabled={!name}
+        disabled={!todo}
         onClick={addTodo}
         className="cursor-pointer bg-purple-900 rounded outline-none text-white p-1 w-24 hover:text-gray-300 dark:bg-slate-50 dark:text-black"
       >
