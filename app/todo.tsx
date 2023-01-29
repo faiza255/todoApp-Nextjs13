@@ -3,8 +3,9 @@
 import { useRouter } from "next/navigation";
 import { FaCheck } from "react-icons/fa";
 import '../styles/globals.css'
+
 async function update(id:any, isDone:any, refresh:any) {
-  await fetch(`/api/todo/update`, {
+  await fetch("https://json-api-sand.vercel.app/api/todo/update", {
     method: "POST",
     body: JSON.stringify({ id, isDone }),
   });

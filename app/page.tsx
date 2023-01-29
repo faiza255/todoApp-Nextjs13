@@ -11,7 +11,7 @@ export default function page() {
 <ThemeToggleButton/>
 </div>
 <div className="container w-50 mx-auto flex flex-col items-center justify-center">
-<AddTodo/>
+
  {/* @ts-expect-error Server Component */}
 <TodoList />
 </div>

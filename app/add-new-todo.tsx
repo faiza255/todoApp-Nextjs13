@@ -16,15 +16,19 @@ async function addTodo(name:any, refresh:any) {
 export default function AddNewTodo({textvalue}:any) {
   const router = useRouter();
   let [name, setName] = useState("");
+const [val,setVal] = useState('')
+  const onchangeHandler = (e:any) =>{
+    console.log(e)
+    setVal(e.target.value)
+  }
   return (
 
     <div>
       
       <input
         type="text"
-        onChange={(e) => setName(e.target.value)}
-        
-        value={name}
+        onChange={onchangeHandler}
+        value={val}
         className="rounded w-96 p-1 outline-none m-5"
          
       />
