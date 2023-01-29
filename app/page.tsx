@@ -12,7 +12,7 @@ export default function page() {
 </div>
 <div className="container w-50 mx-auto flex flex-col items-center justify-center">
 
- {/* @ts-expect-error Server Component */}
+
 <TodoList />
 </div>
 </div>
